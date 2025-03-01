@@ -1,5 +1,5 @@
 import type { Chain } from "thirdweb";
-import { avalancheFuji, polygonAmoy, sepolia } from "./chains";
+import { avalancheFuji, polygon, polygonAmoy, sepolia } from "./chains";
 
 export type Token = {
   tokenAddress: string;
@@ -33,6 +33,11 @@ export const SUPPORTED_TOKENS: SupportedTokens[] = [
         tokenAddress: "0x82dcec6aa3c8bfe2c96d40d8805ee0da15708643",
         symbol: "USDT",
         icon: "/erc20-icons/usdt.png",
+      },
+      {
+        tokenAddress: "0x5425890298aed601595a70ab815c96711a31bc65",
+        symbol: "ZOME",
+        icon: "/erc20-icons/zome.gif",
       },
       // Add more ERC20 here...
     ],
@@ -69,6 +74,17 @@ export const SUPPORTED_TOKENS: SupportedTokens[] = [
       },
     ],
   },
+  {
+    chain: polygon,
+    tokens: [
+      {
+        tokenAddress: "0xA9E319a93b7Bc9139c0656A340BE906daa0D1879",
+        symbol: "ZOME",
+        icon: "/erc20-icons/zome.gif",
+      },
+      
+    ],
+  },
 ];
 
 export const NATIVE_TOKEN_ICON_MAP: { [key in Chain["id"]]: string } = {
@@ -76,4 +92,5 @@ export const NATIVE_TOKEN_ICON_MAP: { [key in Chain["id"]]: string } = {
   [sepolia.id]: "/native-token-icons/eth.png",
   [avalancheFuji.id]: "/native-token-icons/avax.png",
   [polygonAmoy.id]: "/native-token-icons/matic.png",
+  [polygon.id]: "/native-token-icons/zome.gif",
 };

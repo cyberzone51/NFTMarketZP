@@ -57,19 +57,19 @@ export const NFT_CONTRACTS: NftContract[] = [
     type: "ERC721",
   },
   {
-    address: "0x4b6CDEFF5885A57678261bb95250aC43aD490752",
+    address: "0x87f2eAc3687D0AA609bEfE3Ed4bF9d58E79360a6",
     chain: polygonAmoy,
-    title: "Mata NFT",
+    title: "GORGI",
     thumbnailUrl:
-      "https://258c828e8cc853bf5e0efd001055fb39.ipfscdn.io/ipfs/bafybeidec7x6bptqmrxgptaedd7wfwxbsccqfogzwfsd4a7duxn4sdmnxy/0.png",
+      "https://gateway.pinata.cloud/ipfs/QmSkqKRXoB7LtGUDGM3PXYxGekHjywZ3RNmoVkALyBy4NZ/myFile.png",
     type: "ERC721",
   },
   {
-    address: "0xd5e815241882676F772A624E3892b27Ff3a449c4",
-    chain: avalancheFuji,
-    title: "Cats (ERC1155)",
+    address: "0xb0D8108079662a3336656efac0Acd75ca3e5EeEC",
+    chain: polygonAmoy,
+    title: "Zombie Punks",
     thumbnailUrl:
-      "https://258c828e8cc853bf5e0efd001055fb39.ipfscdn.io/ipfs/bafybeif2nz6wbwuryijk2c4ayypocibexdeirlvmciqjyvlzz46mzoirtm/0.png",
-    type: "ERC1155",
+       "https://gateway.pinata.cloud/ipfs/QmcndoEPdyPFxksa27ZmZ8Sb1tMPUWfJCAnUHsEc51aiYQ/posterzp.gif",
+    type: "ERC721",
   },
 ];

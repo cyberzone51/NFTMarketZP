@@ -15,6 +15,7 @@ import {
   MenuList,
   Image,
   useColorMode,
+  keyframes,
 } from "@chakra-ui/react";
 import { blo } from "blo";
 import { FaRegMoon } from "react-icons/fa";
@@ -29,6 +30,13 @@ import {
 import type { Wallet } from "thirdweb/wallets";
 import { SideMenu } from "./SideMenu";
 
+// Define the gradient animation keyframes
+const gradientAnimation = keyframes`
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+`;
+
 export function Navbar() {
   const account = useActiveAccount();
   const wallet = useActiveWallet();
@@ -41,12 +49,14 @@ export function Navbar() {
             as={Link}
             href="/"
             _hover={{ textDecoration: "none" }}
-            bgGradient="linear(to-l, #7928CA, #FF0080)"
+            bgGradient="linear(to-r, #ff0080, #7928CA, #0070f3, #00c9ff,rgb(166, 255, 0))"
+            bgSize="300% 100%"
+            animation={`${gradientAnimation} 8s ease infinite`}
             bgClip="text"
             fontWeight="extrabold"
+            fontSize="2xl"
           >
-            {/* Replace this with your own branding */}
-            THIRDMART
+            MetaART
           </Heading>
         </Box>
         <Box display={{ lg: "block", base: "none" }}>
